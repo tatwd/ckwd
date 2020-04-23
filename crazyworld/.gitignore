@@ -1,0 +1,8 @@
+#Qt
+*.pro
+
+/WatermelonChess/build-WChess-1-Desktop_Qt_5_4_1_MinGW_32bit-Debug/*
+
+WatermelonChess/WChess-5/Resources/*
+
+WatermelonChess/WChess-6/Resources/*

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>test index</title>
+</head>
+<body>
+<div id="main">
+    <p id="t1">Hello World! </p>
+    <p id="t2">I am Leo.Nice to meet you! </p>
+    <p class="t3">DOM编程很有用。</p>
+    <p>这个实例演示了<b>getElementById、getElementByTagName</b>和<b>getElementsByClassName</b>方法的使用。</p>
+</div>
+</body>
+</html>
+<script>
+    
+    var txt=document.getElementById("t1").innerHTML;    //get t1 text value to txt
+    document.write(txt);
+    
+    var x=document.getElementById("t2");
+    document.write(x.firstChild.nodeValue);
+    
+    var y=document.getElementsByTagName("p");
+    document.write("第一个段落文本为："+y[0].innerHTML);
+
+    var z=document.getElementById("main").getElementsByTagName("p");
+    document.write("在div中的第二段为："+z[1].innerHTML);
+    
+    var s=document.getElementsByClassName("t3").innerHTML;
+    document.write(s);
+</script>
